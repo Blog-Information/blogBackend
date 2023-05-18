@@ -18,7 +18,7 @@ public class PoisonousChickenSoup {
     @CrossOrigin
     @GetMapping(value = "/jitang")
     public String jitang() throws SQLException{
-        ArrayList<String> list=new ArrayList<String>();
+        ArrayList<String> list= new ArrayList<>();
         String url = "jdbc:mysql://localhost:3306/blog";
         String user = "root";
         String password = "root";

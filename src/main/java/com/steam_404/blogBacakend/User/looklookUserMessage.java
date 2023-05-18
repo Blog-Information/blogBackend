@@ -15,7 +15,7 @@ public class looklookUserMessage {
     @RequestMapping("/userMessageList")
     public ArrayList<String> userMessageList() throws SQLException {
 //        定义动态数组,传递用户的留言
-        ArrayList<String> content = new ArrayList<String>();
+        ArrayList<String> content = new ArrayList<>();
         String url = "jdbc:mysql://localhost:3306/blog";
         String user = "root";
         String password = "root";
