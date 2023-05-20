@@ -14,7 +14,7 @@ public class dateTime {
     @CrossOrigin
     @GetMapping(value = "/MessageInformationDateTime")
     public ArrayList<String> userContentDate() throws SQLException {
-        ArrayList<String> list=new ArrayList<String>();
+        ArrayList<String> list=new ArrayList<>();
         String url="jdbc:mysql://localhost:3306/blog";
         String user="root";
         String password="root";
