@@ -48,57 +48,36 @@ public class UserMessage {
         public String browser;
         public String system;
 
-        public int getRanking() {
-            return ranking;
-        }
 
         public void setRanking(int ranking) {
             this.ranking = ranking;
         }
 
-        public String getData() {
-            return data;
-        }
 
         public void setData(String data) {
             this.data = data;
         }
 
-        public String getIpAddress() {
-            return ipAddress;
-        }
 
         public void setIpAddress(String ipAddress) {
             this.ipAddress = ipAddress;
         }
 
-        public String getAddress() {
-            return address;
-        }
 
         public void setAddress(String address) {
             this.address = address;
         }
 
-        public String getLsp() {
-            return lsp;
-        }
 
         public void setLsp(String lsp) {
             this.lsp = lsp;
         }
 
-        public String getBrowser() {
-            return browser;
-        }
 
         public void setBrowser(String browser) {
             this.browser = browser;
         }
 
-        public String getSystem() {
-            return system;
-        }
 
         public void setSystem(String system) {
             this.system = system;
