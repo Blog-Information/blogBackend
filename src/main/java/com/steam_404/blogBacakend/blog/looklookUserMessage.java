@@ -1,6 +1,6 @@
 //author:steam-404
 //查看用户留言
-package com.steam_404.blogBacakend.User;
+package com.steam_404.blogBacakend.blog;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
