@@ -1,6 +1,6 @@
 //author:steam-404
 //查看用户留言
-package com.steam_404.blogBacakend.blog;
+package com.steam_404.blogBacakend.blog.UserContent;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,7 @@ import java.sql.*;
 import java.util.ArrayList;
 
 @RestController
-public class looklookUserMessage {
+public class looklookUserContent {
     @CrossOrigin
     @RequestMapping("/userMessageList")
     public ArrayList<String> userMessageList() throws SQLException {
@@ -19,7 +19,7 @@ public class looklookUserMessage {
         String url = "jdbc:mysql://localhost:3306/blog";
         String user = "root";
         String password = "root";
-        String SQL = "select (content) from blog.messageboard;";
+        String SQL = "select (content) from blog.usercontent;";
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(SQL);

@@ -1,6 +1,6 @@
 //author:steam-404
 //访客信息接口
-package com.steam_404.blogBacakend.blog;
+package com.steam_404.blogBacakend.blog.UserMessage;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,7 @@ import java.sql.*;
 public class UserMessage {
     @CrossOrigin
 //    返回数据库的访客
-    @RequestMapping(value = "/visitor")
+    @RequestMapping(value = "/visitorList")
     public ArrayList<User> visitorMessage() throws SQLException {
         ArrayList<User> list = new ArrayList<>();
 
