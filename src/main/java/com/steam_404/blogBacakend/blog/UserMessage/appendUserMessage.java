@@ -17,6 +17,7 @@ public class appendUserMessage {
 //    访客添加留言功能
     public void addMessage(
             @RequestParam String ipAddress,
+            @RequestParam String country,
             @RequestParam String address,
             @RequestParam String lsp,
             @RequestParam String browser,
@@ -25,8 +26,8 @@ public class appendUserMessage {
         String url = "jdbc:mysql://localhost:3306/blog";
         String user = "root";
         String password = "root";
-        String SQL = "insert into blog.access(data, ipAddress, address, lsp, browser, `system`)" +
-                "value (now(),'"+ipAddress+"','"+address+"','"+lsp+"','"+browser+"','"+system+"')";
+        String SQL = "insert into blog.access(data, ipAddress, country, address, lsp, browser, `system`)\n" +
+                "values (now(),'"+ipAddress+"','"+country+"','"+address+"','"+lsp+"','"+browser+"','"+system+"')";
         Connection connection = DriverManager.getConnection(url, user, password);
         Statement statement = connection.createStatement();
         statement.execute(SQL);

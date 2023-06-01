@@ -34,7 +34,6 @@
             <!-- 这里填写你需要的版本号 -->
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -45,5 +44,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

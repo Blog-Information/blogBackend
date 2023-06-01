@@ -30,6 +30,7 @@ public class UserMessage {
             userMessage.setRanking(resultSet.getInt("ranking"));
             userMessage.setData(String.valueOf(resultSet.getDate("data")));
             userMessage.setIpAddress(resultSet.getString("ipAddress"));
+            userMessage.setCountry(resultSet.getString("country"));
             userMessage.setAddress(resultSet.getString("address"));
             userMessage.setLsp(resultSet.getString("lsp"));
             userMessage.setBrowser(resultSet.getString("browser"));
@@ -43,6 +44,7 @@ public class UserMessage {
         public int ranking;
         public String data;
         public String ipAddress;
+        public String country;
         public String address;
         public String lsp;
         public String browser;
@@ -63,6 +65,9 @@ public class UserMessage {
             this.ipAddress = ipAddress;
         }
 
+        public void setCountry(String country) {
+            this.country = country;
+        }
 
         public void setAddress(String address) {
             this.address = address;
