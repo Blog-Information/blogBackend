@@ -7,7 +7,7 @@ import java.sql.*;
 @RestController
 public class appendUserContent {
     @CrossOrigin
-    @RequestMapping(value = "appendContent")
+    @RequestMapping(value = "/appendContent")
 //    访客添加留言功能
     public void addMessage(
             @RequestParam String content
